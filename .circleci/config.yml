@@ -20,9 +20,9 @@ jobs:
 
      # Caching is fully customizable in 2.0
      - save_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
-        paths:
-          - .node_modules
+         key: dependency-cache-{{ checksum "package.json" }}
+         paths:
+           - .node_modules
 
       # Again, no inference in 2.0 yet, so nothing to override here, either.
       # Just use any test commands.
